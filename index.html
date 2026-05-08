@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>ShiroPuks Website</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg">
+
+    <meta property="og:title" content="ShiroPuks Website">
+    <meta property="og:description" content="Website buatan mahasiswa Unsil: Ramadhan Adicahya Firdaus.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.jpg">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShiroPuks Website adalah platform modern berbasis Node.js dan Express dengan desain profesional dan responsif.">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/features.html">Features</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <li><button class="login-btn" onclick="openLogin()">Login</button></li>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Kelompok 16</h1>
+            <p>Materi mengenai LKM Jurusan Informatika</p>
+            <a href="materi.html" class="cta-btn">
+            Materi
+        </a>
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Struktur ringan dan optimal.</p>
+        </div>
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Tampilan menyesuaikan semua device.</p>
+        </div>
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Desain clean dan profesional.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@mybrand.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyBrand. All rights reserved.</p>
+    </footer>
+
+  
+    <!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <form id="loginForm">
+    
+    <input 
+        type="email" 
+        id="email" 
+        placeholder="Email"
+        required
+    >
+
+    <input 
+        type="password" 
+        id="password"
+        placeholder="Password"
+        required
+    >
+
+    <button class="btn-primary" type="submit">
+        Login
+    </button>
+
+</form>
+        <div class="divider">or</div>
+        <p>Belum punya akun? <a href="#" onclick="openRegister()">Register</a></p>
+    </div>
+    <div id="registerModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeRegister()">&times;</span>
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Password">
+
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
